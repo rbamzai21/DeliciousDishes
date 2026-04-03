@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/rvMainMenu"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/start_screen"
+        android:layout_height="10dp"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_anchor="@+id/rvMainMenu"
+        app:layout_anchorGravity="bottom|center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

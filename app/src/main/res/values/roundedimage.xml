@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <style name="Style.App.circleImageView" parent="">
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.App.circleImageView</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.circleImageView" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+</resources>

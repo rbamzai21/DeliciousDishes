@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Delicious Dishes</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="messages_header">General</string>
+
+    <string name="music_title">Background Music</string>
+
+</resources>

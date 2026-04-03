@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="musicsetting"
+            app:summary="Tap to turn off/on background music played on the recipe screen"
+            app:title="@string/music_title"></SwitchPreferenceCompat>
+
+        <Preference
+            app:summary="Check my website"
+            app:title="Website">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://prodbyrishab.com" />
+        </Preference>
+
+        <Preference
+            app:summary="Share recipes or provide feedback for this app."
+            app:title="Share Recipe">
+
+            <intent
+                android:action="com.project.deliciousdishes.activities.SETTINGS_NEW_ACTIVITY"
+                android:targetClass="com.project.deliciousdishes.activities.contactus"
+                android:targetPackage="com.project.deliciousdishes" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
